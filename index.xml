@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>Abouttt</title>
+      <title>About</title>
       <link>http://example.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/about/</guid>
-      <description>Palermo Penano  Data scientist at Scotiabank (Toronto) Expertise in Python and predictive modeling  Contact information  pspenano@outlook.com Github Twitter LinkedIn  </description>
+      <description>Palermo Penano JR  Data scientist at Scotiabank (Toronto) Expertise in Python and predictive modeling  Contact information  pspenano@outlook.com Github Twitter LinkedIn  </description>
     </item>
     
   </channel>
