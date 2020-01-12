@@ -6,9 +6,28 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2020 20:32:43 -0500</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First Post</title>
+      <link>http://example.org/posts/first-post/</link>
+      <pubDate>Fri, 10 Jan 2020 20:32:43 -0500</pubDate>
+      
+      <guid>http://example.org/posts/first-post/</guid>
+      <description>This is a first post.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Palermo Penano  Data scientist at Scotiabank (Toronto) Expertise in Python and predictive modeling  Contact information  pspenano@outlook.com Github Twitter LinkedIn  </description>
+    </item>
     
   </channel>
 </rss>
