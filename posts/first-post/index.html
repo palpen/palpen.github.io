@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
   </head>
 
   <body>
@@ -30,7 +58,30 @@
 </div>
 
 <main>
-<p>This is a first post.</p>
+<p>This is a first post. To print in Python, do</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Hello</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><p>Write math:</p>
+<p>$$
+L=\sum_{(u,v)\in D} \log {\exp(-d(u,v))}
+$$</p>
+<p>$$
+\left\{
+\begin{cases}
+\dot{x} &amp; = \sigma(y-x) \newline
+\dot{y} &amp; = \rho x - y - xz \newline
+\dot{z} &amp; = -\beta z + xy
+\end{cases}
+\right.
+$$</p>
+<p>$$
+\vec{\nabla} \times \vec{F} =
+\left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i}
++ \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j}
++ \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k}
+$$</p>
+<p>$$
+L=\sum_{(u,v)\in D} \log {\exp(-d(u,v))}-\log {\sum_{v&rsquo; \in N(u)} \exp(-d(u,v&rsquo;))}
+$$</p>
 
 </main>
 
