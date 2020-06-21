@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Target Encoding Categorical Features | Palermo Penano&#39;s Site</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Target Encoding Categorical Features</span></h1>
+
+<h2 class="date">2020/01/25</h2>
+</div>
+
+<main>
+<h2 id="what-is-target-encoding">What is target encoding?</h2>
+<p>Replace categorical value with the mean of the target among all records with the given category</p>
+<h2 id="when-to-use-target-encoding">When to use target encoding?</h2>
+<p>In cases when the cardinality of a categorical feature is huge and one-hot is infeasible or when label encoding is inappropriate</p>
+<h2 id="what-type-of-categorical-features-does-it-apply-to">What type of categorical features does it apply to?</h2>
+<ul>
+<li>ordinal, nominal, binary</li>
+</ul>
+<h2 id="what-are-the-issues-with-target-encoding">What are the issues with target encoding?</h2>
+<ul>
+<li>Can cause overfitting when distribution of target among cateogiries in training set is different from test set (how ???)</li>
+</ul>
+<h2 id="intuition-for-k-fold-cv-target-encoding">Intuition for K-fold CV target encoding</h2>
+<p>Taking mean of target for category value that have very few records may result in biased estimates in the distribution of the target. If the category is say &lsquo;cat&rsquo;, but there are only 5 records associated with that category, then the mean of the target may not represent the true distribution of cat in the test set. To avoid this, instead of taking the mean of the target across all the records in the training dataset for each cateogory, take the mean of the target for each cateogry value only on the k-1 folds and use the mean for that target on the kth fold. This introduces some noise in the target encoding, reducing the chance of overfitting.</p>
+<p>Without k-fold CV, a given value in a cateogircal feature will only have the mean of the target for the entire training set. With k-fold CV, the cateogry value, say &lsquo;cat&rsquo;, will have a different target encoding across records, among the different k folds.</p>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://medium.com/@pouryaayria/k-fold-target-encoding-dfe9a594874b">K-Fold Target Encoding</a></li>
+<li><a href="https://www.kaggle.com/vprokopev/mean-likelihood-encodings-a-comprehensive-study">Comprehensive study on mean encoding for categorical variables</a></li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © 2020 Palermo Penano. Powered by Hugo using the <a href="https://github.com/yihui/hugo-xmin">XMin</a> theme
+  
+  </footer>
+  </body>
+</html>
+

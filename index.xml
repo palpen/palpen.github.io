@@ -6,10 +6,21 @@
     <description>Recent content on Palermo Penano&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2020 20:32:43 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 11:50:01 -0500</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Target Encoding Categorical Features</title>
+      <link>http://example.org/posts/target-encoding-categorical-features/</link>
+      <pubDate>Sat, 25 Jan 2020 11:50:01 -0500</pubDate>
+      
+      <guid>http://example.org/posts/target-encoding-categorical-features/</guid>
+      <description>What is target encoding? Replace categorical value with the mean of the target among all records with the given category
+When to use target encoding? In cases when the cardinality of a categorical feature is huge and one-hot is infeasible or when label encoding is inappropriate
+What type of categorical features does it apply to?  ordinal, nominal, binary  What are the issues with target encoding?  Can cause overfitting when distribution of target among cateogiries in training set is different from test set (how ?</description>
+    </item>
     
     <item>
       <title>First Post</title>
