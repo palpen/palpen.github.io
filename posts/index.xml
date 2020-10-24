@@ -6,21 +6,10 @@
     <description>Recent content in Posts on Palermo Penano&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2020 11:50:01 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 20:32:43 -0500</lastBuildDate>
     
 	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Target Encoding Categorical Features</title>
-      <link>http://example.org/posts/target-encoding-categorical-features/</link>
-      <pubDate>Sat, 25 Jan 2020 11:50:01 -0500</pubDate>
-      
-      <guid>http://example.org/posts/target-encoding-categorical-features/</guid>
-      <description>What is target encoding? Replace categorical value with the mean of the target among all records with the given category
-When to use target encoding? In cases when the cardinality of a categorical feature is huge and one-hot is infeasible or when label encoding is inappropriate
-What type of categorical features does it apply to?  ordinal, nominal, binary  What are the issues with target encoding?  Can cause overfitting when distribution of target among cateogiries in training set is different from test set (how ?</description>
-    </item>
     
     <item>
       <title>First Post</title>
@@ -33,6 +22,16 @@ print(&amp;#34;Hello&amp;#34;) Write math:
 $$ L=\sum_{(u,v)\in D} \log {\exp(-d(u,v))} $$
 $$ \left\{ \begin{cases} \dot{x} &amp;amp; = \sigma(y-x) \newline \dot{y} &amp;amp; = \rho x - y - xz \newline \dot{z} &amp;amp; = -\beta z + xy \end{cases} \right. $$
 $$ \vec{\nabla} \times \vec{F} = \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} \right) \mathbf{i} + \left( \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} \right) \mathbf{j} + \left( \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right) \mathbf{k} $$</description>
+    </item>
+    
+    <item>
+      <title>How to balance a panel data in Python&#39;s Pandas</title>
+      <link>http://example.org/posts/balanced-panel-pandas/</link>
+      <pubDate>Fri, 10 Jan 2020 20:32:43 -0500</pubDate>
+      
+      <guid>http://example.org/posts/balanced-panel-pandas/</guid>
+      <description>This is a first post. To print in Python, do
+print(&amp;#34;Hello&amp;#34;) </description>
     </item>
     
   </channel>
